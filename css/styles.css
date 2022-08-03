@@ -46,7 +46,7 @@ transition: var(--transition-dur-and-func);
 .container {
     padding-left: 15px;
     padding-right: 15px;
-    width: 1170px;
+    width: 1200px;
     margin: auto;
 }    
 :root {
@@ -128,9 +128,9 @@ transition: var(--transition-dur-and-func);
     letter-spacing: 0.03em; 
 }
 /* ===меню========================== */
-.box-sizing{
+/* .box-sizing{
 box-sizing: content-box;
-}
+} */
 .icon-envelope{
     fill: #757575;
 }
@@ -213,12 +213,13 @@ box-sizing: content-box;
     bottom: -1px;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0);
+    transition: var(--transition-timing-function);
+    transition: var(--transition-duration);
 }
 .menu-item:hover::after,
 .menu-item:focus::after {
     background-color: var(--logo-color-blue-blue);
-    transition: var(--transition-timing-function);
-    transition: var(--transition-duration);
+
 }
 .current-li {
     color: var(--logo-color-blue-blue);
@@ -510,12 +511,13 @@ color: var(--primary-text-color);
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: var(--transition-timing-function);
+    transition:  var(--transition-duration);
 }
 .list-linkrem-footer:hover,
 .list-linkrem-footer:focus {
     background-color: var(--logo-color-blue-blue);
-    transition: var(--transition-timing-function);
-    transition:  var(--transition-duration);
+
 }
 .name-footer{
 font-weight: 700;
@@ -582,7 +584,8 @@ color: rgba(255, 255, 255, 0.6);
     padding: 6px 22px;
     border-radius: 4px;
     letter-spacing: 0.03em;
-    
+    transition: var(--transition-timing-function);
+    transition: var(--transition-duration);
 }
 .button-portolio:hover,
 .button-portolio:focus {
@@ -590,8 +593,7 @@ color: rgba(255, 255, 255, 0.6);
     color: var(--main-header-background-size);
     cursor: pointer;
     box-shadow: var(--shadow);
-    transition: var(--transition-timing-function);
-    transition: var(--transition-duration);
+
 }
 .qwet:hover{
     text-decoration: none;
@@ -602,7 +604,7 @@ cursor:pointer;
 }
 /* ===всплывающие окна=========================== */
 .overlay {
-    text-align: center;
+    /* text-align: center; */
     position: absolute;
     left: 0;
     top: 0;
@@ -651,7 +653,7 @@ display: none;
     margin-bottom: 50px;
 }
 .one {
-    
+
     margin-left: 280px;
 }
 .qwe{
@@ -659,7 +661,6 @@ display: none;
     flex-wrap: wrap;
     gap: 30px;
     box-sizing: content-box;
-
 }
 .productweb{
 
